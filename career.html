@@ -1,0 +1,194 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Welcome to app designer group  - career</title>
+<meta name="KeyWords" content="legal version ltd,app designer group, data integration,
+enterprise business solutions, infrastructure, data mapping, data warehouse,"/>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="Description" content="app designer group . is one of Canada's providers of advanced information technology, products, services and business consulting expertise" />
+<meta name="revisit" content="1 day" />
+<meta name="robots" content="index, follow"/>
+<meta name="Rating" content="General"/>
+<meta name="robots" content="all" />
+<meta name="google-site-verification" content="cLgasnRyvsQIJzHT7oqA49q3WZ4sGNSQzOwXGYJ5wak" />
+
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+// <![CDATA[
+jQuery(document).ready(function(){
+	$('#contactform').submit(function(){
+		var action = $(this).attr('action');
+		$.post(action, {
+			name: $('#name').val(),
+			email: $('#email').val(),
+			company: $('#company').val(),
+			subject: $('#subject').val(),
+			message: $('#message').val()
+		},
+			function(data){
+				$('#contactform #submit').attr('disabled','');
+				$('.response').remove();
+				$('#contactform').before('<p class="response">'+data+'</p>');
+				$('.response').slideDown();
+				if(data=='Message sent!') $('#contactform').slideUp();
+			}
+		);
+		return false;
+	});
+});
+// ]]>
+</script>
+</head>
+<body>
+<div class="main">
+  <div class="blok_header">
+    <div class="header">
+		<div class="logo">
+  			<a href="index.html">
+    			<div class="logo-text">app designer group</div>
+    			<span class="logo-sub">Legal Version</span>
+  			</a>
+	   </div>
+      <div class="menu">
+        <ul>
+          <li><a href="index.html"><span>Home</span></a></li>
+          <li><a href="about.html"><span>About Us</span></a></li>
+          <li><a href="services.html"><span>Services</span></a></li>
+          <li><a href="career.html" class="active"><span>Career</span></a></li>
+          <li><a href="contact.html"><span>Contact Us</span></a></li>
+        </ul>
+      </div>
+      <div class="clr"></div>
+    </div>
+    <div class="clr"></div>
+  </div>
+  <div class="clr"></div>
+  <div class="header_text_bg">
+    <h2>&nbsp;</h2>
+    <div class="header_text">
+      <div class="header_text_resize">
+        <div class="search">
+          <form id="form1" name="form1" method="post" action="">
+            <label><span>
+              <input name="q" type="text" class="keywords" id="textfield" maxlength="50" value="Search..." />
+              </span>
+              <input name="b" type="image" src="images/search.gif" class="button" />
+            </label>
+          </form>
+        </div>
+      <h2><br />
+        <span>Data Integration, Enterprise business solutions, Dynamic infrastructure </span><br />
+        <span>We use leading edge technologies and tools to identify new opportunities and drive business improvements.</span>
+        </h2>
+        <div class="clr"></div>
+      </div>
+    </div>
+    <div class="clr"></div>
+  </div>
+  <div class="body_resize">
+    <div class="body">
+      <div class="left">
+        <h3>Career<br />
+          <span>Available Opportunities: </span> </h3>
+        <p>we are always looking for talented, educated, experienced, and passionate people to join our team.
+        app designer group is a qualified supplier for Canada Federal Government departments under Professional Services Online.</p>
+
+        <p><br />
+        </p>
+
+	<p>
+       </p>
+        <p><br />
+        </p>
+        <!--
+        <form action="contact.php" method="post" id="contactform">
+          <ol>
+            <li>
+              <label for="name">First Name <span class="red">*</span></label>
+              <input id="name" name="name" class="text" />
+            </li>
+            <li>
+              <label for="email">Your email <span class="red">*</span></label>
+              <input id="email" name="email" class="text" />
+            </li>
+            <li>
+              <label for="company">Company</label>
+              <input id="company" name="company" class="text" />
+            </li>
+            <li>
+              <label for="subject">Subject</label>
+              <input id="subject" name="subject" class="text" />
+            </li>
+            <li>
+              <label for="message">Message <span class="red">*</span></label>
+              <textarea id="message" name="message" rows="6" cols="50"></textarea>
+            </li>
+            <li class="buttons">
+              <input type="image" name="imageField" id="imageField" src="images/send.gif" class="send" />
+              <div class="clr"></div>
+            </li>
+          </ol>
+        </form>
+        -->
+
+      </div>
+      <div class="right">
+        <h3>Social Places<br />
+          <span> Please join us on social networks</span></h3>
+        <img src="images/rss.jpg" alt="picture" width="259" height="25" /></div>
+      <div class="clr"></div>
+      <div class="clr"></div>
+    </div>
+    <div class="clr"></div>
+  </div>
+</div>
+<div class="FBG">
+  <div class="FBG_resize">
+    <div class="left">
+      <h2>about</h2>
+      <p>app designer group . is one of Canada's providers of advanced information technology, products, services and business consulting expertise.</p>
+      <ul>
+        <li><a href="about.html">Overview »</a></li>
+        <li><a href="about.html">Our Staff »</a></li>
+        <li><a href="contact.html">Career »</a></li>
+      </ul>
+    </div>
+        <div class="left">
+      <h2>philosophy</h2>
+      <p>Our philosophy is based on knowledge sharing, technical open concept, dynamic planning for now and future user requirements,
+         no assumptions solid solutions... </p>
+    </div>
+        <div class="left">
+      <h2>blog</h2>
+      <p>We encourage open knowledge transferring such as Technical tutorials, reference guides, basic concepts, forums and communities </p>
+      <ul>
+        <li><a href="#">Data Integration tutorial »</a></li>
+        <li><a href="#">Enterprise Solutions tutorial »</a></li>
+      </ul>
+    </div>
+        <div class="left">
+      <h2>support</h2>
+      <p>
+       our technical support provides multi-tiered technical support assistance to our customers
+      </p>
+
+      <p><span>job@appdesigner.group <br />
+       </span>
+      </p>
+    </div>
+    <div class="clr"></div>
+  </div>
+  <div class="clr"></div>
+</div>
+<div class="footer">
+  <div class="footer_resize">
+    <p class="leftt">2025 © Copyright app designer group . All Rights Reserved<br />
+    <a href="index.html">Home</a> | <a href="contact.html">Contact</a> </p>
+    <div class="clr"></div>
+  </div>
+  <div class="clr"></div>
+</div>
+</body>
+</html>
