@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Trainer Remote App — App Designer Group</title>
+    <meta name="description"
+        content="Discover 'Personal Trainer - Remote', our featured iOS fitness app connecting clients with trainers globally. Watch the demo and download on the App Store." />
+    <meta name="robots" content="index, follow" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="assets/style.css" />
+
+    <style>
+        .app-hero {
+            background: linear-gradient(135deg, #0A1128 0%, #162445 100%);
+            padding: 100px 0 80px;
+            color: #fff;
+        }
+
+        .app-icon-large {
+            width: 120px;
+            height: 120px;
+            border-radius: 28px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+            margin-bottom: 2rem;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            /* 16:9 ratio */
+            height: 0;
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+            border: 1px solid rgba(201, 168, 76, 0.3);
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        .store-badge {
+            display: inline-block;
+            transition: transform 0.3s ease;
+        }
+
+        .store-badge:hover {
+            transform: translateY(-3px);
+        }
+
+        .social-stat-card {
+            background: var(--white);
+            border: 1px solid var(--light-gray);
+            border-radius: var(--radius-md);
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.3s;
+        }
+
+        .social-stat-card:hover {
+            box-shadow: var(--shadow-sm);
+            border-color: var(--gold);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ======================== NAVBAR ======================== -->
+    <nav class="navbar navbar-expand-lg" aria-label="Main navigation">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <div class="brand-icon">A</div>
+                <div class="brand-text">
+                    <span class="brand-name">App Designer Group</span>
+                    <span class="brand-sub" style="font-size: 0.6rem;">Enterprise Consulting</span>
+          <span style="font-size: 0.55rem; color: rgba(255,255,255,0.5); text-transform: uppercase; letter-spacing: 0.05em; margin-top: -2px;">Part of Legal Version Ltd</span>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain"
+                aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarMain">
+                <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1 mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="remote-trainer.html">Remote Trainer</a></li>
+          <li class="nav-item"><a class="nav-link" href="ai-web-generator.html">AI Web Agent</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <a href="contact.html" class="btn btn-navbar-cta ms-lg-3">Engage With Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ======================== APP HERO ======================== -->
+    <section class="app-hero text-center">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 fade-up">
+                    <div style="font-size: 4rem; color: var(--gold); margin-bottom:1rem;"><i
+                            class="bi bi-phone-vibrate"></i></div>
+                    <span class="section-label light">Featured Product</span>
+                    <h1 class="display-heading mt-3 mb-4" style="color:var(--white);">Personal Trainer - Remote</h1>
+                    <p class="lead mb-5" style="color:rgba(255,255,255,0.7);">
+                        Take control of your fitness with a real personal trainer through live one-on-one video calls.
+                        Whether you want to lose weight, build muscle, or stay active, our certified professionals are
+                        here to help you reach your goals.
+                    </p>
+                    <div class="d-flex justify-content-center gap-3">
+                        <a href="https://apps.apple.com/us/app/personal-trainer-remote/id6455258193" target="_blank"
+                            rel="noopener" class="store-badge">
+                            <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1690000000"
+                                alt="Download on the App Store" style="height: 52px;">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================== VIDEO DEMO ======================== -->
+    <section class="section-light">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 fade-up">
+                    <span class="section-label">See It In Action</span>
+                    <h2>Transform Your Fitness Journey</h2>
+                    <div class="gold-divider"></div>
+                    <p class="mt-3" style="font-size:1.05rem; line-height:1.8;">
+                        Download <strong>Personal Trainer - Remote</strong> today and get access to certified trainers
+                        from anywhere in the world. Turn your home into your personal gym and receive customized fitness
+                        plans tailored just for you.
+                    </p>
+                    <ul class="feature-list mt-4 mb-4">
+                        <li><i class="bi bi-check-circle-fill fi"></i> <strong>Live Video Sessions:</strong> Join live
+                            1-on-1 sessions for real-time guidance.</li>
+                        <li><i class="bi bi-check-circle-fill fi"></i> <strong>Personalized Plans:</strong> Choose and
+                            customize a plan that fits your exact goals.</li>
+                        <li><i class="bi bi-check-circle-fill fi"></i> <strong>Fitness Tracking:</strong> Keep track of
+                            your progress and stay motivated.</li>
+                        <li><i class="bi bi-check-circle-fill fi"></i> <strong>Free Group Sessions:</strong> Join bonus
+                            group workouts via video calls—no credit card required.</li>
+                    </ul>
+                    <a href="https://www.youtube.com/@RemotePersonalTrainer" target="_blank" rel="noopener"
+                        class="btn-outline-gold mt-2">
+                        <i class="bi bi-youtube" style="color:red;"></i> Watch More Demos on YouTube
+                    </a>
+                </div>
+                <div class="col-lg-6 fade-up">
+                    <div class="video-wrapper">
+                        <iframe width="100%" height="315" src="https://www.youtube-nocookie.com/embed/KDnnk9PL8sc"
+                            title="Remote Personal Trainer Client Perspective" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================== SOCIAL CONNECT ======================== -->
+    <section>
+        <div class="container mt-4 mb-4 text-center">
+            <div class="section-header centered fade-up">
+                <h2>Join Our Community</h2>
+                <p>Follow the "Personal Trainer - Remote" app across our social channels for updates, new features, and
+                    fitness and app development tips.</p>
+            </div>
+
+            <div class="row justify-content-center g-4">
+                <div class="col-md-5 fade-up">
+                    <a href="https://www.instagram.com/remotepersonaltrainerapp/" target="_blank" rel="noopener"
+                        style="text-decoration: none; color: inherit;">
+                        <div class="social-stat-card">
+                            <i class="bi bi-instagram"
+                                style="font-size: 2.5rem; color: #E1306C; margin-bottom: 1rem; display:block;"></i>
+                            <h4 style="color:var(--navy);">Instagram</h4>
+                            <p style="color:var(--text-light); font-size: 0.9rem; margin-bottom:0;">
+                                @remotepersonaltrainerapp</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-5 fade-up">
+                    <a href="https://www.youtube.com/@RemotePersonalTrainer" target="_blank" rel="noopener"
+                        style="text-decoration: none; color: inherit;">
+                        <div class="social-stat-card">
+                            <i class="bi bi-youtube"
+                                style="font-size: 2.5rem; color: #FF0000; margin-bottom: 1rem; display:block;"></i>
+                            <h4 style="color:var(--navy);">YouTube</h4>
+                            <p style="color:var(--text-light); font-size: 0.9rem; margin-bottom:0;">
+                                @RemotePersonalTrainer</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================== FOOTER ======================== -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4 footer-brand">
+                    <a class="navbar-brand mb-2" href="index.html">
+                        <div class="brand-icon">A</div>
+                        <div class="brand-text">
+                            <span class="brand-name">App Designer Group</span>
+                            <span class="brand-sub" style="font-size: 0.6rem;">Enterprise Consulting</span>
+          <span style="font-size: 0.55rem; color: rgba(255,255,255,0.5); text-transform: uppercase; letter-spacing: 0.05em; margin-top: -2px;">Part of Legal Version Ltd</span>
+                        </div>
+                    </a>
+                    <p>Toronto-based technology consulting firm specializing in GCP, data integration, and secure
+                        enterprise software delivery.</p>
+                    <div class="social-links mt-3">
+                        <a href="#" class="social-link" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-2">
+                    <div class="footer-heading">Company</div>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="footer-heading">Expertise</div>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Enterprise Cloud (GCP)</a></li>
+                        <li><a href="services.html">Data Integration & AI</a></li>
+                        <li><a href="services.html">Zero Trust Security</a></li>
+                        <li><a href="remote-trainer.html">Featured Apps</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <div class="footer-heading">Headquarters</div>
+                    <div class="footer-contact-item">
+            <i class="bi bi-envelope"></i>
+            <a href="mailto:info@appdesigner.group">info@appdesigner.group</a>
+          </div>
+                    <div class="footer-contact-item">
+                        <i class="bi bi-globe"></i>
+                        <a href="https://appdesigner.group" target="_blank" rel="noopener">appdesigner.group</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p>© 2025 App Designer Group. All rights reserved.</p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <p>Federal Supply Arrangement Qualified</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/script.js"></script>
+</body>
+
+</html>
